@@ -32,7 +32,7 @@ var testArr = [3, 7, 2, 5, 10, 13, 15]
 //
 // console.log(newArr);
 
-var testArr = [3, 7, 2, 5, 10, 13, 15]
+// var testArr = [3, 7, 2, 5, 10, 13, 15]
 
 
 // function mult3(arr){
@@ -117,6 +117,20 @@ var testArr = [3, 7, 2, 5, 10, 13, 15]
 // console.log(oddNum(testArr));
 
 
+
+
+var testArr = [3, 7, 2, 5, 10, 13, 15]
+//
+const oddNum = (array) => {
+    var newArr = array.filter((value, index) => {
+        if (value % 2 === 0) {
+            return index
+        }
+    })
+    return newArr
+}
+//
+console.log(oddNum(testArr));
 
 
 
